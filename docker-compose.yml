@@ -23,8 +23,12 @@ services:
                python manage.py collectstatic --noinput &&
                gunicorn ptu20_postit.wsgi --bind 0.0.0.0:8000"
   db:
+<<<<<<< HEAD
     #image: postgresql    #https://hub.docker.com/_/postgresql  404
     image: postgres   #https://hub.docker.com/_/postgres
+=======
+    image: postgres
+>>>>>>> origin/main
     container_name: ptu20postit.db
     restart: always
     ports:
@@ -42,4 +46,8 @@ services:
       - 80:80
     volumes:
       - ./ptu20_postit/media:/app/media
+<<<<<<< HEAD
       - ./ptu20_postit/static:/app/static
+=======
+      - ./ptu20_postit/static:/app/static
+>>>>>>> origin/main

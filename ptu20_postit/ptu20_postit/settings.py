@@ -28,7 +28,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'ptu20.postit']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -73,7 +72,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'ptu20_postit.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
@@ -91,7 +89,6 @@ DATABASES = {
         'PORT': os.getenv('POSTGRES_PORT', 5432),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
